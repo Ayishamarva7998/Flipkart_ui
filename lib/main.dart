@@ -1,3 +1,5 @@
+import 'package:flipkart_clone/bottom.dart';
+import 'package:flipkart_clone/categories.dart';
 import 'package:flipkart_clone/home.dart';
 import 'package:flutter/material.dart';
 
