@@ -1,5 +1,5 @@
-import 'package:flipkart_clone/flipkart.dart';
-import 'package:flipkart_clone/grocery.dart';
+import 'package:flipkart_clone/screens/flipkart.dart';
+import 'package:flipkart_clone/screens/grocery.dart';
 import 'package:flutter/material.dart';
 
 class cart extends StatefulWidget {

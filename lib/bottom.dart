@@ -1,8 +1,11 @@
-import 'package:flipkart_clone/account.dart';
-import 'package:flipkart_clone/cart.dart';
-import 'package:flipkart_clone/categories.dart';
-import 'package:flipkart_clone/home.dart';
-import 'package:flipkart_clone/notifications.dart';
+import 'package:flipkart_clone/screens/account.dart';
+import 'package:flipkart_clone/screens/account.dart';
+import 'package:flipkart_clone/screens/cart.dart';
+import 'package:flipkart_clone/screens/categories.dart';
+import 'package:flipkart_clone/screens/home.dart';
+import 'package:flipkart_clone/screens/home.dart';
+import 'package:flipkart_clone/screens/notifications.dart';
+import 'package:flipkart_clone/screens/myorders.dart';
 import 'package:flutter/material.dart';
 
 
@@ -20,8 +23,10 @@ final pages = [
   home(),
   categories(),
   Notifications(),
-  Account(),
+ Account(),
   cart(),
+  Myorders(),
+  
 ];
 
   @override

@@ -1,4 +1,5 @@
 
+import 'package:flipkart_clone/screens/myorders.dart';
 import 'package:flutter/material.dart';
 
 class Account extends StatelessWidget {
@@ -98,8 +99,14 @@ class Account extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        buttoncontainers(context,
-                            image: 'assets/images/box.png', text: 'Orders'),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) =>Myorders() ,));
+                          },
+                          child: buttoncontainers(context,
+                              image: 'assets/images/box.png', text: 'Orders'),
+                        ),
+                            
                         buttoncontainers(context,
                             image: 'assets/images/favorite.png',
                             text: 'Wishlist'),
@@ -181,21 +188,21 @@ class Account extends StatelessWidget {
                       height: 10,
                     ),
                     accountbuttons(
-                        width: 200,
+                        width: 220,
                         image: 'assets/images/flipkartplus-bg.png',
                         txt: 'Flipkart Plus'),
                     SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 200,
+                        width: 100,
                         image: 'assets/images/user1.png',
                         txt: 'Edit Profile'),
                     SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 200,
+                        width: 220,
                         image: 'assets/images/purse.png',
                         txt: 'Saved Cards'),
                     SizedBox(
@@ -209,7 +216,7 @@ class Account extends StatelessWidget {
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 200,
+                        width: 220,
                         image: 'assets/images/language.png',
                         txt: 'Language'),
                     SizedBox(
@@ -436,7 +443,7 @@ class Account extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-           
+           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Myorders()));
           },
           child: Container(
             width: 180,

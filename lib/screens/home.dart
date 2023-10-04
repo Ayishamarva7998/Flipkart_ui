@@ -174,53 +174,188 @@ class _homeState extends State<home> {
                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   
                   children: [
+                    Container(
+                      height: 120,
+                      width: 100,
+                      color: Color.fromARGB(255, 127, 185, 232),
+                      child: Column(
+                        children: [
+                         Image.asset("assets/images/lap.jpeg",height: 75,
+                         ),
+                         Text('Hot Deal!'),
+                         Text('From 35,999',style:TextStyle(fontWeight: FontWeight.bold))
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 20,),
                     
                    Column(
                      children: [
-                       Image.asset("assets/images/laptoppp.jpeg",height: 70,),
-                       Text("Laptops"),
+                      Container(
+                      height: 120,
+                      width: 100,
+                      color: Color.fromARGB(255, 127, 185, 232),
+                      child: Column(
+                        children: [
+                         Image.asset("assets/images/watchessss.jpeg",height: 76,
+                         ),
+                         Text('Smart watches '),
+                         Text('From 999',style:TextStyle(fontWeight: FontWeight.bold))
+                        ],
+                      ),
+                    ),
+                       
+                      
+                      
                      ],
                    ),
-                       SizedBox(height: 10,),
+                       SizedBox(height: 20,),
                          
                          Column(
-                           children: [
-                             Image.asset("assets/images/bournvita.jpeg",height: 70,),
-                              Text("Bournvita"),
+                           children: [Container(
+                      height: 120,
+                      width: 100,
+                      color: Color.fromARGB(255, 127, 185, 232),
+                      child: Column(
+                        children: [
+                         Image.asset("assets/images/skincare.jpeg",height: 76,
+                         ),
+                         Text('Glow Baby Girl '),
+                         Text('From 349',style:TextStyle(fontWeight: FontWeight.bold))
+                        ],
+                      ),
+                    ),
+                            
+                              
                            ],
                          ),
-                 SizedBox(height: 10,),
+                 SizedBox(height: 20,
+                 ),
               
                Column(
-                 children: [
-                   Image.asset("assets/images/watches.jpg",height: 70,),
-                    Text("Watches"),
+                 children: [Container(
+                      height: 120,
+                      width: 100,
+                      color: Color.fromARGB(255, 127, 185, 232),
+                      child: Column(
+                        children: [
+                         Image.asset("assets/images/chocolate.jpeg",height: 86,
+                         ),
+                         Text('Celebrate '),
+                         Text('From 99',style:TextStyle(fontWeight: FontWeight.bold),)
+                        ],
+                      ),
+                    ),             
                  ],
                ),
-                SizedBox(height: 10,),
+                SizedBox(height: 20,),
              
-                Column(
-                  children: [
-                    Image.asset("assets/images/ball.jpeg",height: 70,),
-                     Text("Basketball"),
-                  ],
-                ),
-                
+               
                   ],
                 ),
               ),
               SizedBox(height: 20,),
+              Align(alignment: Alignment.topLeft,
+                child: Text('Recently Visited Store',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
+                ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SingleChildScrollView(scrollDirection: Axis.horizontal,
+                    child: Row(
+                  
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                         Column(
+                           children: [
+                             Image.asset('assets/images/lipstick.jpeg',height: 150,),
+                             Text("Dazzler Lipstick")
+                           ],
+                         ),
+                         SizedBox(width: 10,),
+                                
+                  
+                         Column(
+                           children: [
+                             Image.asset('assets/images/sweaters.jpeg',height: 150,),
+                             Text("Zara Sweater")
+                           ],
+                         ),
+                         SizedBox(width: 10,),
+                             
+                        
+                                 Column(
+                           children: [
+                             Image.asset('assets/images/flats.jpeg',height: 140,),
+                             Text("Max ")
+                           ],
+                         ),
+                      ],
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                    
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                         Column(
+                           children: [
+                             Image.asset('assets/images/bottle.jpeg',height: 110,),
+                             Text("Bottles")
+                           ],
+                         ),
+                         SizedBox(width: 10,),
+                                
+                    
+                         Column(
+                           children: [
+                             Image.asset('assets/images/flowers.jpeg',height: 120,),
+                             Text("Flowers")
+                           ],
+                         ),
+                         SizedBox(width: 10,),
+                          Column(
+                           children: [
+                             Image.asset('assets/images/decorrrr.jpeg',height: 120,width: 180,),
+                             Text("Decor")
+                           ],
+                         ),
+                             
+                        
+                                
+                      ],
+                    ),
+                  ),
+                
+                ],
+               
+                
+              ),
+               
+                ],
+                
+              ),
               
-              Container(
-                child: Image.asset("assets/images/wot.jpg"),
-              )
+              
+              
             
-            ],
+            
+            
+            
+            
+            
           ),
+          
+          
+          
+          
         ),
         
-      ),
-    );
+        
+      );
+    
   }
   
 
