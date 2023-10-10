@@ -18,12 +18,12 @@ class cart extends StatefulWidget {
       length: 2,
       child: Scaffold(
         appBar:AppBar(
-          title: Text('My Cart',style: TextStyle(color: Colors.black),),
-          backgroundColor: Color.fromARGB(255, 255, 255, 255),
+          title: const Text('My Cart',style: TextStyle(color: Colors.black),),
+          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
           elevation: 0,
         ),
         
-        body: Column(
+        body: const Column(
           children: [
 
             TabBar(

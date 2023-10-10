@@ -9,7 +9,7 @@ class Account extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 240, 239, 239),
+        backgroundColor: const Color.fromARGB(255, 240, 239, 239),
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
@@ -62,17 +62,17 @@ class Account extends StatelessWidget {
               child: Container(
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     Image.asset(
                       'assets/images/Flipkart-SuperCoin.png',
                       height: 20,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Text(
+                    const Text(
                       '50',
                       style: TextStyle(
                           color: Colors.black,
@@ -85,8 +85,8 @@ class Account extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     border:
-                        Border.all(color: Color.fromARGB(255, 170, 170, 170)),
-                    borderRadius: BorderRadius.all(Radius.circular(50))),
+                        Border.all(color: const Color.fromARGB(255, 170, 170, 170)),
+                    borderRadius: const BorderRadius.all(Radius.circular(50))),
               ),
             )
           ],
@@ -101,18 +101,17 @@ class Account extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) =>Myorders() ,));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) =>const Myorders() ,));
                           },
                           child: buttoncontainers(context,
                               image: 'assets/images/box.png', text: 'Orders'),
-                        ),
-                            
+                        ), 
                         buttoncontainers(context,
                             image: 'assets/images/favorite.png',
                             text: 'Wishlist'),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Row(
@@ -128,7 +127,7 @@ class Account extends StatelessWidget {
                 ),
                 width: MediaQuery.of(context).size.width,
                 height: 120,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
               ),
               const SizedBox(
                 height: 8,
@@ -137,89 +136,89 @@ class Account extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10, left: 10),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 10, left: 10),
                       child: Text(
                         'Credit Options',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     creditbutton(
                       image: 'assets/images/personal.png',
                       txt1: 'Personal Loan',
-                      txt2: 'Get loan of up to 5Lakh instantly',
+                      txt2: 'Zero Processing Fee.',
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     creditbutton(
                         image: 'assets/images/pay.png',
                         txt1: 'Flipkart Pay Later',
-                        txt2: 'Available Balance : 3000. Shop  ')
+                        txt2: 'Get 20,000 Worth Time Prime  ')
                   ],
                 ),
                 width: MediaQuery.of(context).size.width,
                 height: 150,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 310,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10, left: 10),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 10, left: 10),
                       child: Text(
                         'Account Settings',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     accountbuttons(
-                        width: 220,
+                        width: 210,
                         image: 'assets/images/flipkartplus-bg.png',
                         txt: 'Flipkart Plus'),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 100,
+                        width: 220,
                         image: 'assets/images/user1.png',
                         txt: 'Edit Profile'),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 220,
+                        width: 210,
                         image: 'assets/images/purse.png',
                         txt: 'Saved Cards'),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 200,
+                        width: 240,
                         image: 'assets/images/placeholder.png',
                         txt: 'Address'),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
-                        width: 220,
+                        width: 230,
                         image: 'assets/images/language.png',
                         txt: 'Language'),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     accountbuttons(
@@ -229,115 +228,115 @@ class Account extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10, left: 10),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 10, left: 10),
                       child: Text(
                         'My Activity',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     accountbuttons(
                         image: 'assets/images/search.png',
                         txt: 'Reviews',
-                        width: 165),
-                    SizedBox(
+                        width: 240),
+                    const SizedBox(
                       height: 20,
                     ),
                     accountbuttons(
                         image: 'assets/images/qa.png',
                         txt: 'Questions & Answers',
-                        width: 105)
+                        width: 145)
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10, left: 10),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 10, left: 10),
                       child: Text(
                         'Earn With Flipkart',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     accountbuttons(
                         image: 'assets/images/star.png',
                         txt: 'Flipkart Creator Studio',
                         width: 130),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     accountbuttons(
                         image: 'assets/images/shop.png',
                         txt: 'Sell On Flipkart',
-                        width: 100)
+                        width: 190)
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 150,
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: const BoxDecoration(color: Colors.white),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10, left: 10),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 10, left: 10),
                       child: Text(
                         'Feedback & Information',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     accountbuttons(
                         image: 'assets/images/terms.png',
                         txt: 'Terms and Policies',
-                        width: 100),
-                    SizedBox(
+                        width: 156),
+                    const SizedBox(
                       height: 20,
                     ),
                     accountbuttons(
                         image: 'assets/images/ask.png',
                         txt: 'Browse FAQs',
-                        width: 100)
+                        width: 196)
                   ],
                 ),
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 100,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 240, 239, 239),
                 ),
                 child: Center(
@@ -346,10 +345,10 @@ class Account extends StatelessWidget {
                       height: 50,
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                          borderRadius: const BorderRadius.all(Radius.circular(8)),
                           border:
-                              Border.all(color: Color.fromRGBO(0, 0, 0, 0.2))),
-                      child: Center(
+                              Border.all(color: const Color.fromRGBO(0, 0, 0, 0.2))),
+                      child: const Center(
                           child: Text(
                         'Log out',
                         style: TextStyle(
@@ -373,20 +372,20 @@ class Account extends StatelessWidget {
   }) {
     return Row(
       children: [
-        SizedBox(
+        const SizedBox(
           width: 14,
         ),
         Image.asset(
           image,
           height: 30,
-          color: Color.fromARGB(255, 4, 97, 236),
+          color: const Color.fromARGB(255, 4, 97, 236),
         ),
-        SizedBox(
+        const SizedBox(
           width: 20,
         ),
         Text(
           txt,
-          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400),
+          style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w400),
         ),
         SizedBox(
           width: width,
@@ -403,15 +402,15 @@ class Account extends StatelessWidget {
       {required String image, required String txt1, required String txt2}) {
     return Row(
       children: [
-        SizedBox(
+        const SizedBox(
           width: 14,
         ),
         Image.asset(
           image,
           height: 30,
-          color: Color.fromARGB(255, 4, 97, 236),
+          color: const Color.fromARGB(255, 4, 97, 236),
         ),
-        SizedBox(
+        const SizedBox(
           width: 20,
         ),
         Column(
@@ -419,12 +418,12 @@ class Account extends StatelessWidget {
           children: [
             Text(
               txt1,
-              style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400),
+              style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w400),
             ),
             Text(txt2)
           ],
         ),
-        SizedBox(
+        const SizedBox(
           width: 100,
         ),
         Image.asset(
@@ -438,39 +437,39 @@ class Account extends StatelessWidget {
   Row buttoncontainers(context, {required String image, required String text}) {
     return Row(
       children: [
-        SizedBox(
+        const SizedBox(
           width: 15,
         ),
         InkWell(
           onTap: () {
-           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Myorders()));
+           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const Myorders()));
           },
           child: Container(
             width: 180,
             height: 40,
             child: Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Image.asset(
                   image,
                   height: 20,
-                  color: Color.fromARGB(255, 4, 97, 236),
+                  color: const Color.fromARGB(255, 4, 97, 236),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Text(
                   text,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 )
               ],
             ),
             decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(5)),
-                border: Border.all(color: Color.fromRGBO(0, 0, 0, 0.2))),
+                borderRadius: const BorderRadius.all(Radius.circular(5)),
+                border: Border.all(color: const Color.fromRGBO(0, 0, 0, 0.2))),
           ),
         )
       ],

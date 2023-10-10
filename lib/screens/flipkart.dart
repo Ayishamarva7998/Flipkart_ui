@@ -22,36 +22,36 @@ class flipkart extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 
                                 children: [
-                                  Text('Deliver to: Ayisha marva,676305 ',
+                                  const Text('Deliver to: Ayisha marva,676305 ',
                                   style: TextStyle(fontWeight: 
                                   FontWeight.bold),),
-                                  SizedBox(width: 15,),
+                                  const SizedBox(width: 15,),
                                   Container(
-                                    decoration:BoxDecoration(
+                                    decoration:const BoxDecoration(
                                       color: Color.fromARGB(255, 219, 218, 218)
                                     ),
-                                     child: Text('HOME'),
+                                     child: const Text('HOME'),
                                   ), 
                                 ],
                               ),
-                              Text('Mattra kannancheri HOUSE,KMP,ko...')
+                              const Text('Mattra kannancheri HOUSE,KMP,ko...')
                             ],
                           ),
                         ),
                         Container(
                           height: 30,
                           width: 65,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white, 
                           ),
-                          child: Center(child: Text('CHANGE',style:
+                          child: const Center(child: Text('CHANGE',style:
                            TextStyle(color: Color.fromARGB(255, 5, 130, 232,),
                            fontWeight: FontWeight.bold),),
                           ),
                         ),
                       ],
                     ),
-                    Divider(color: const Color.fromARGB(65, 0, 0, 0),thickness: 1,),
+                    const Divider(color: Color.fromARGB(65, 0, 0, 0),thickness: 1,),
                     Container(
                       color: Colors.white,
                       child: Column(
@@ -65,17 +65,17 @@ class flipkart extends StatelessWidget {
                                     Image.asset('assets/images/persons.avif',height: 120,),
                                     ElevatedButton.icon(
                                       style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-                                      onPressed: (){}, icon: Icon(
+                                      onPressed: (){}, icon: const Icon(
                                       
                                         Icons.arrow_drop_down,color: Colors.black,), 
-                                        label: Text('Qty:1',style: 
+                                        label: const Text('Qty:1',style: 
                                         TextStyle(color: Colors.black),),
                                     )
                                   ], 
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 10,top: 15),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 10,top: 15),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -84,10 +84,10 @@ class flipkart extends StatelessWidget {
                                     Text('Size:s'),
                                     Row(
                                       children: [
-                                        Icon(Icons.star,color: const Color.fromARGB(255, 7, 107, 11),),
-                                        Icon(Icons.star,color: const Color.fromARGB(255, 7, 107, 11),),
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
                                         Icon(Icons.star,color: Color.fromARGB(255,7,107,11),),
-                                        Icon(Icons.star,color: const Color.fromARGB(255, 7, 107, 11),),                 
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),                 
                                       ],
                                     ),
                                     Row(
@@ -105,7 +105,7 @@ class flipkart extends StatelessWidget {
                             ],
                             
                           ),
-                          Divider(height: 10,),
+                          const Divider(height: 10,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             
@@ -117,9 +117,9 @@ class flipkart extends StatelessWidget {
                                 height: 50,
                                 width: 195,
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: Color.fromARGB(255, 212, 212, 212))
+                                  border: Border.all(color: const Color.fromARGB(255, 212, 212, 212))
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.save,color: Colors.grey,),
@@ -136,9 +136,9 @@ class flipkart extends StatelessWidget {
                                 height: 50,
                                 width: 196,
                                  decoration: BoxDecoration(
-                                  border: Border.all(color: Color.fromARGB(255, 212, 212, 212))
+                                  border: Border.all(color: const Color.fromARGB(255, 212, 212, 212))
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.delete,color: Colors.grey,),
@@ -157,10 +157,10 @@ class flipkart extends StatelessWidget {
                                     Image.asset('assets/images/zaracostume.jpeg',height: 120,),
                                     ElevatedButton.icon(
                                       style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-                                      onPressed: (){}, icon: Icon(
+                                      onPressed: (){}, icon: const Icon(
                                       
                                         Icons.arrow_drop_down,color: Colors.black,), 
-                                        label: Text('Qty:1',style: 
+                                        label: const Text('Qty:1',style: 
                                         TextStyle(color: Colors.black),),
                                     )
                               
@@ -169,8 +169,8 @@ class flipkart extends StatelessWidget {
                                 ),
 
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 10,top: 15),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 10,top: 15),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -178,10 +178,10 @@ class flipkart extends StatelessWidget {
                                     Text('Size:M'),
                                     Row(
                                       children: [
-                                        Icon(Icons.star,color: const Color.fromARGB(255, 7, 107, 11),),
-                                        Icon(Icons.star,color: const Color.fromARGB(255, 7, 107, 11),),
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
                                         Icon(Icons.star,color: Color.fromARGB(255,7,107,11),),
-                                        Icon(Icons.star,color: const Color.fromARGB(255, 7, 107, 11),),
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
                                                                              
                                       ],
                                     ),
@@ -210,9 +210,9 @@ class flipkart extends StatelessWidget {
                                 height: 50,
                                 width: 195,
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: Color.fromARGB(255, 212, 212, 212))
+                                  border: Border.all(color: const Color.fromARGB(255, 212, 212, 212))
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.save,color: Colors.grey,),
@@ -226,9 +226,9 @@ class flipkart extends StatelessWidget {
                                 height: 50,
                                 width: 196,
                                  decoration: BoxDecoration(
-                                  border: Border.all(color: Color.fromARGB(255, 212, 212, 212))
+                                  border: Border.all(color: const Color.fromARGB(255, 212, 212, 212))
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.delete,color: Colors.grey,),
@@ -255,15 +255,15 @@ class flipkart extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 
-                                children: [Icon(Icons.currency_rupee),
-                                  Text('6,498',style: TextStyle(
+                                children: [const Icon(Icons.currency_rupee),
+                                  const Text('6,498',style: TextStyle(
                                   fontSize: 25,
                                 ),),
-                                SizedBox(width: 110,),
+                                const SizedBox(width: 110,),
                                 Container(
                                   height: 60,
                                   width: 170,
-                                  child: Center(
+                                  child: const Center(
                                     child: Text('Place order',
                                     style: TextStyle(fontSize: 21),),
                                   ),

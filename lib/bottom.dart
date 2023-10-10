@@ -4,8 +4,9 @@ import 'package:flipkart_clone/screens/cart.dart';
 import 'package:flipkart_clone/screens/categories.dart';
 import 'package:flipkart_clone/screens/home.dart';
 import 'package:flipkart_clone/screens/home.dart';
-import 'package:flipkart_clone/screens/notifications.dart';
+
 import 'package:flipkart_clone/screens/myorders.dart';
+import 'package:flipkart_clone/screens/notifications1.dart';
 import 'package:flutter/material.dart';
 
 
@@ -22,7 +23,7 @@ class _bottombarState extends State<bottombar> {
 final pages = [
   home(),
   categories(),
-  Notifications(),
+  notifications1(),
  Account(),
   cart(),
   Myorders(),
