@@ -93,7 +93,7 @@ class flipkart extends StatelessWidget {
                                     Row(
                                       children: [
                                         Icon(Icons.currency_rupee),
-                                        Text('2,999',style: TextStyle(fontSize: 20,decoration: TextDecoration.lineThrough),), 
+                                        Text('2,999',style: TextStyle(fontSize: 20),), 
                                       ],
                                     ),
                                     Text('4 offers applied . 2 offers available',style: TextStyle(fontWeight: FontWeight.bold,
@@ -252,7 +252,7 @@ class flipkart extends StatelessWidget {
                                 
                                 
                                 children: [
-                                  Text('6,948',style: TextStyle(decoration: TextDecoration.lineThrough),),
+                                  Text('6,948',style: TextStyle(decoration: TextDecoration.lineThrough,fontSize: 15,fontWeight: FontWeight.bold,color:Colors.black)),
                                   const Icon(Icons.currency_rupee),
                                   const Text('6,400',style: TextStyle(
                                   fontSize: 25,
