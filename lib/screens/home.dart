@@ -193,6 +193,7 @@ class _homeState extends State<home> {
                      ],
                    ),
                        const SizedBox(height: 20,),
+
                          Column(
                            children: [Container(
                       height: 120,

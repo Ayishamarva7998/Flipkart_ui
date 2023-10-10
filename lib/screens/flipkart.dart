@@ -93,7 +93,7 @@ class flipkart extends StatelessWidget {
                                     Row(
                                       children: [
                                         Icon(Icons.currency_rupee),
-                                        Text('2,999',style: TextStyle(fontSize: 20),), 
+                                        Text('2,999',style: TextStyle(fontSize: 20,decoration: TextDecoration.lineThrough),), 
                                       ],
                                     ),
                                     Text('4 offers applied . 2 offers available',style: TextStyle(fontWeight: FontWeight.bold,
@@ -150,7 +150,7 @@ class flipkart extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Padding(
+                              Padding(  
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
                                   children: [
@@ -163,11 +163,8 @@ class flipkart extends StatelessWidget {
                                         label: const Text('Qty:1',style: 
                                         TextStyle(color: Colors.black),),
                                     )
-                              
-                                  ],
-                                  
+                                  ], 
                                 ),
-
                               ),
                               const Padding(
                                 padding: EdgeInsets.only(left: 10,top: 15),
@@ -181,8 +178,7 @@ class flipkart extends StatelessWidget {
                                         Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
                                         Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
                                         Icon(Icons.star,color: Color.fromARGB(255,7,107,11),),
-                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),
-                                                                             
+                                        Icon(Icons.star,color: Color.fromARGB(255, 7, 107, 11),),                                     
                                       ],
                                     ),
                                     Row(
@@ -197,8 +193,7 @@ class flipkart extends StatelessWidget {
                                     )
                                   ],
                                 ),
-                              ),
-                            
+                              ),    
                             ],
                           ), 
                           Row(
@@ -255,11 +250,14 @@ class flipkart extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
                                 
-                                children: [const Icon(Icons.currency_rupee),
-                                  const Text('6,498',style: TextStyle(
+                                
+                                children: [
+                                  Text('6,948',style: TextStyle(decoration: TextDecoration.lineThrough),),
+                                  const Icon(Icons.currency_rupee),
+                                  const Text('6,400',style: TextStyle(
                                   fontSize: 25,
                                 ),),
-                                const SizedBox(width: 110,),
+                                const SizedBox(width: 79,),
                                 Container(
                                   height: 60,
                                   width: 170,
